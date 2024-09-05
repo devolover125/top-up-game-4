@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: rgb(185, 55, 15);
+    line-height: 1.6;
+   min-height: 100vh;
+   overflow-x: hidden;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+header{
+background-color: #333;
+color: #effeff;
+width: 100%;
+padding: 20px;
+margin: 0 auto;
+}
+header h1{
+    display: inline-block;
+    margin-left: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+.hero{
+    background: url(https://media.hitekno.com/thumbs/2022/04/29/88929-ilustrasi-top-up-game/730x480-img-88929-ilustrasi-top-up-game.jpg) no-repeat center center/cover;
+    color: #effeff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.hero .btn{
+    background-color: black;
+    color: white;
+    font-size: 50px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.games{
+    margin: 50px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+.games h3{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #fff;
+}
+
+.game-list{
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.game-item{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-color: rgb(44, 34, 34);
+    padding: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+    overflow-x: auto;
+}
+
+.game-item img{
+    background-position: left;
+    background-position: center;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: calc(50% - 20px);
+    width: 300px;
+    display: flex;
+    margin: 110px;
+    flex-wrap: wrap;
+    object-fit: cover;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    border:  20px solid #333;
+    display: block;
+    justify-items: center ;
+    overflow-x: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.1);
+    transition: all 0.3s ease;
+    width: 60%;
+    height: 60%;
+    flex: 1;
+}
+
+.game-item img:hover{
+    background-color: rgb(225, 225,225, 0.8 );
+    top: 20%;
+    left: 20%;
+    width: 80%;
+    height: 80%;
+}
+footer{
+    background-color: #333;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    padding: 25px ;
+    height: 100% ;
+    margin-top: auto;
+    box-sizing: border-box;
+}
+
+@media(max-width: 768px){
+    .hero{
+        padding: 60px;
+    }
+    .hero h2{
+        font-size: 28px;
+    }
+    .hero p{
+        font-size: 16px;
+    }
+    .game-list{
+        flex-direction: column;
+        align-items: center;
+    }
+    .game-item{
+        width: 80px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 1024px){
+    .hero h2{
+        font-size: 24px;
+    }
+    .hero p{
+        font-size: 14px;
+    }
+    .hero .btn{
+        padding: 8px 16px;
+    }
+    .game-item{
+        width: calc(33.33%);
+        padding: 15px;
+    }
+    .header .footer{
+    padding: 15px;
+    font-size: 1rem;
+    }
+}
